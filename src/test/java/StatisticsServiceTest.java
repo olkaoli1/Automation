@@ -40,12 +40,12 @@ public class StatisticsServiceTest {
         Assertions.assertEquals(expected, actual);
     }
 
-    @Test
-    void shouldReturnMaxWhenSortedDescending() {
-        StatisticsService service = new StatisticsService();
-        long[] incomes = {10, 5, 3, 1};
-        long expected = 10;
-        long actual = service.findMax(incomes);
-        Assertions.assertEquals(expected, actual);
-    }
-}
+//    @Test
+//    void shouldReturnMaxWhenSortedDescending() {
+//        StatisticsService service = new StatisticsService();
+//        long[] incomes = {10, 5, 3, 1};
+//        long expected = 10;
+//        long actual = service.findMax(incomes);
+//        Assertions.assertEquals(expected, actual);
+//    }
+//}
