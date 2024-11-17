@@ -72,7 +72,7 @@
                                         <limit>
                                             <counter>BRANCH</counter>
                                             <value>COVEREDRATIO</value>
-                                            <minimum>0.0</minimum> <!-- Установлено временное значение -->
+                                            <minimum>1.0</minimum> <!-- Установлено временное значение -->
                                         </limit>
                                     </limits>
                                 </rule>
