@@ -6,6 +6,7 @@
     <groupId>ru.netology</groupId>
     <artifactId>Automation</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <name>Automation Project</name>
     <description>This project is used for automation testing tasks with full branch coverage requirements.</description>
 
@@ -16,7 +17,6 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
@@ -33,7 +33,6 @@
 
     <build>
         <plugins>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -43,7 +42,6 @@
                     <target>11</target>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
