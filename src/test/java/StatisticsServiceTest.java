@@ -49,4 +49,34 @@ public class StatisticsServiceTest {
         long actual = service.findMax(incomes);
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    void shouldReturnMaxWithAllEqualValues() {
+        StatisticsService service = new StatisticsService();
+        long[] incomes = {7, 7, 7, 7};
+        long expected = 7;
+        long actual = service.findMax(incomes);
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    void shouldReturnMaxWithMixedPositiveAndNegativeValues() {
+        StatisticsService service = new StatisticsService();
+        long[] incomes = {-10, -20, 15, -5, 0};
+        long expected = 15;
+        long actual = service.findMax(incomes);
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    void shouldReturnMaxWithLargeArray() {
+        StatisticsService service = new StatisticsService();
+        long[] incomes = new long[1000];
+        for (int i = 0; i < incomes.length; i++) {
+            incomes[i] = i;
+        }
+        long expected = 999;
+        long actual = service.findMax(incomes);
+        Assertions.assertEquals(expected, actual);
+    }
 }
